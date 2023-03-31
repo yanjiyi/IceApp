@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(IceUI)
+project(IceApp)
 
 include_directories(
 	"framework"
@@ -31,5 +31,5 @@ set(APP_SRC
 	application/IceApp.cpp
 )
 
-add_executable(IceUI ${FRAMEWORK_SRC} ${APP_SRC} App.h App.cpp main.cpp)
-target_link_libraries(IceUI SDL2 GLEW GL X11 GLU SOIL)
+add_executable(IceApp ${FRAMEWORK_SRC} ${APP_SRC} App.h App.cpp main.cpp)
+target_link_libraries(IceApp SDL2 GLEW GL X11 GLU SOIL)
